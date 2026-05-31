@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>My Weblog</title>
     <script src="tailwind.js"></script>
   </head>
   <body class="w-full h-full flex justify-center mt-11">
@@ -13,15 +13,16 @@
         <h1 class="text-4xl text-cyan-500">My Weblog</h1>
       </div>
 <!-- box search and button addBlog -->
-      <div>
+      <div class="flex flex-row items-center justify-between m-7 gap-10">
         <span><input
-            class="bg-slate-700 w-3/5 h-10 mt-7 ml-8 rounded-md"
+            class="bg-slate-700 w-[650px] h-10 pl-4 rounded-md"
             type="text"
-            placeholder="  Saerch blogs..."/></span>
-        <span
-          ><button class="bg-teal-500 w-60 h-10 ml-16 rounded-md">
-            Add New Blog
-          </button></span>
+            placeholder="Saerch blogs..."/></span>
+        <span>
+          <button class="bg-gradient-to-r from-blue-500 to-purple-500 text-white w-60 h-10 rounded-md">
+            <a href="addBlog-page.html" target="_blank" class="w-full h-full block content-center">Add New Blog</a>
+          </button>
+        </span>
       </div>
 <!-- boxes for blog -->
       <div class="flex justify-center ">
