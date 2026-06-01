@@ -1,0 +1,55 @@
+<!-- اسم برنچ سوم: html-readmore -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Details</title>
+    <script src="tailwind.js"></script>
+  </head>
+
+  <body class="min-h-screen bg-slate-900 flex items-center justify-center p-4">
+    <div class="w-full max-w-2xl bg-slate-800 rounded-[28px] shadow-2xl border border-slate-700 p-6 md:p-8">
+      
+      <!-- Back -->
+      <a href="index.html" class="text-sky-400 text-lg font-medium hover:underline inline-block mb-6">
+        ← Back
+      </a>
+
+      <!-- Title -->
+      <h1 id="blogTitle" class="text-3xl md:text-5xl font-bold text-white mb-4 leading-tight">
+        Learning REST APIs
+      </h1>
+
+      <!-- Date -->
+      <p class="text-slate-400 text-base md:text-lg font-semibold mb-6">
+        Published: <span id="blogDate">May 2026</span>
+      </p>
+
+      <!-- Image -->
+      <div class="mb-6 rounded-3xl overflow-hidden">
+        <img
+          id="blogImage"
+          src="https://fixed.net/assets/uploads/images/blog/hotel-blog.png"
+          alt="Blog image"
+          class="w-full h-64 md:h-80 object-cover"
+        />
+      </div>
+
+      <!-- Content -->
+      <div class="space-y-6 text-slate-300 text-base md:text-lg leading-8 font-medium">
+        <p id="desc1">
+          REST APIs allow communication between frontend and backend...
+        </p>
+        <p id="desc2">
+          Frontend applications commonly use fetch or axios...
+        </p>
+        <p id="desc3">
+          JSON Server is a good way to simulate backend APIs...
+        </p>
+      </div>
+    </div>
+
+  </body>
+</html>

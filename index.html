@@ -12,48 +12,73 @@
       <div class="pt-8 pl-7">
         <h1 class="text-4xl text-cyan-500">My Weblog</h1>
       </div>
-<!-- box search and button addBlog -->
+      <!-- box search and button addBlog -->
       <div class="flex flex-row items-center justify-between m-7 gap-10">
-        <span><input
+        <span
+          ><input
             class="bg-slate-700 w-[650px] h-10 pl-4 rounded-md"
             type="text"
-            placeholder="Saerch blogs..."/></span>
+            placeholder="Saerch blogs..."
+        /></span>
         <span>
-          <button class="bg-gradient-to-r from-blue-500 to-purple-500 text-white w-60 h-10 rounded-md">
-            <a href="addBlog-page.html" target="_blank" class="w-full h-full block content-center">Add New Blog</a>
+          <button
+            class="bg-gradient-to-r from-blue-500 to-purple-500 text-white w-60 h-10 rounded-md"
+          >
+            <a
+              href="addBlog-page.html"
+              target="_blank"
+              class="w-full h-full block content-center"
+              >Add New Blog</a
+            >
           </button>
         </span>
       </div>
-<!-- boxes for blog -->
-      <div class="flex justify-center ">
+      <!-- boxes for blog -->
+      <div class="flex justify-center">
         <div class="bg-slate-600 w-3/4 h-52 mt-7 mb-7 rounded-3xl">
-            <h1 class="text-slate-50 text-3xl mt-5 ml-8">laerning rest apis</h1>
-            <p class="text-slate-300 text-lg  mt-5 ml-8 ">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-<div class="mt-10 ml-8">
-                <p id="blogdate" class="text-slate-300 text-base  pb-1">1234</p>
+          <h1 class="text-slate-50 text-3xl mt-5 ml-8">laerning rest apis</h1>
+          <p class="text-slate-300 text-lg mt-5 ml-8">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit...
+          </p>
+          <div class="mt-10 ml-8">
+            <p id="blogdate" class="text-slate-300 text-base pb-1">1234</p>
             <span>
-              <button class="w-24 h-8 bg-slate-700 text-slate-300 rounded-lg">Read More</button>
+              <button class="w-24 h-8 bg-slate-700 text-slate-300 rounded-lg">
+                <a
+                  href="readmore-index.html"
+                  target="_blank"
+                  class="w-full h-full block content-center"
+                  >Read More</a
+                >
+              </button>
             </span>
             <span>
-              <button class="w-20 h-8 bg-gradient-to-r from-orange-500 to-red-400 text-white rounded-xl"><a href="editBlog-page.html" target="_blank" class="w-full h-full block content-center">Edit</a><button>
+              <button
+                class="w-20 h-8 bg-gradient-to-r from-orange-500 to-red-400 text-white rounded-xl"
+              >
+                <a
+                  href="editBlog-page.html"
+                  target="_blank"
+                  class="w-full h-full block content-center"
+                  >Edit</a
+                >
+              </button>
             </span>
-
-</div>
+          </div>
         </div>
       </div>
     </div>
-<script>
-  const dateEl = document.getElementById("blogdate");
+    <script>
+      const dateEl = document.getElementById("blogdate");
 
-  const today = new Date();
+      const today = new Date();
 
-  const formatted = today.toLocaleDateString("en-US", {
-    month: "short",
-    year: "numeric",
-  });
+      const formatted = today.toLocaleDateString("en-US", {
+        month: "short",
+        year: "numeric",
+      });
 
-  dateEl.textContent = formatted;
-</script>
-
-</body>
+      dateEl.textContent = formatted;
+    </script>
+  </body>
 </html>
