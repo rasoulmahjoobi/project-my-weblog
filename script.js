@@ -15,12 +15,12 @@ async function getBlog(query = "") {
         let blogResult = ``;
         blog.forEach(b => {
             blogResult += `
-                <div class="bg-slate-600 w-3/4 h-52 mt-7 mb-7 rounded-3xl">
-                    <h1 class="text-slate-50 text-3xl mt-5 ml-8">${b.title}</h1>
-                    <p class="text-slate-300 text-lg ml-8 mr-8 mt-5 line-clamp-1">
+                <div class="bg-slate-600 w-full p-3 m-3 h-40 lg:p-5 lg:m-5 lg:h-52 rounded-3xl">
+                    <h1 class="text-slate-50 text-3xl">${b.title}</h1>
+                    <p class="text-slate-300 text-lg line-clamp-1">
                         ${b.description}
                     </p>
-                    <div class="mt-7 ml-8">
+                    <div class="my-3 lg:my-8">
                         <p class="text-slate-300 text-base pb-1">
                             <span class="text-cyan-400 text-xs">${b.date || 'Jun 2026'}</span>
                         </p>
